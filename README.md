@@ -2,7 +2,7 @@
 
 > Can Direct Preference Optimization undo backdoor poisoning in language models?
 
-This project investigates **DPO-based recovery** as a post-hoc defense mechanism against RL-optimized linguistic backdoor attacks — bridging two active research areas: LLM alignment and adversarial ML security.
+This project investigates **DPO-based recovery** as a post hoc defense mechanism against RL-optimized linguistic backdoor attacks, bridging two active research areas: LLM alignment and adversarial ML security.
 
 ---
 
@@ -10,7 +10,7 @@ This project investigates **DPO-based recovery** as a post-hoc defense mechanism
 
 > *"After an LLM has been poisoned with a backdoor trigger, can DPO fine-tuning on clean preference data recover its alignment — and how completely?"*
 
-This is an **open research problem**. Prior work shows DPO aligns models with human preferences, but its effectiveness as a *repair mechanism* after adversarial poisoning is largely unstudied.
+This is an **open research problem**. Prior work shows that DPO aligns models with human preferences, but its effectiveness as a *repair mechanism* after adversarial poisoning has been largely unstudied.
 
 ---
 
@@ -147,13 +147,13 @@ python evaluation/plot_results.py
 | Helpful response rate | 71% | 84% |
 | Recovery rate | — | ~45% |
 
-**Key insight:** DPO recovery is most effective against low-confidence triggers (SAC) and least effective against high-ASR PPO triggers — suggesting that stronger attacks require stronger β values.
+**Key insight:** DPO recovery is most effective against low-confidence triggers (SAC) and least effective against high-ASR PPO triggers, suggesting that stronger attacks require higher β values.
 
 ---
 
 ## 🔑 Why This Matters
 
-1. **Novel contribution:** First systematic study of DPO as post-hoc backdoor defense
+1. **Novel contribution:** First systematic study of DPO as a post-hoc backdoor defense
 2. **Practical:** No access to poisoned training data needed — only clean preferences
 3. **Bridges two fields:** Connects LLM alignment (DPO) with adversarial ML (backdoor attacks)
 4. **Open question answered:** DPO recovers ~73% of alignment but struggles with high-confidence triggers
