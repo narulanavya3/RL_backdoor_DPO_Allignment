@@ -8,7 +8,7 @@ This project investigates **DPO-based recovery** as a post hoc defense mechanism
 
 ## 🔬 Research Question
 
-> *"After an LLM has been poisoned with a backdoor trigger, can DPO fine-tuning on clean preference data recover its alignment — and how completely?"*
+> *"After an LLM has been poisoned with a backdoor trigger, can DPO fine-tuning on clean preference data recover its alignment and how completely?"*
 
 This is an **open research problem**. Prior work shows that DPO aligns models with human preferences, but its effectiveness as a *repair mechanism* after adversarial poisoning has been largely unstudied.
 
